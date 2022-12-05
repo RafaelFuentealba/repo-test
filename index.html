@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
-</head>
-<body>
-    <h6>Primer elemento</h6>
-    <h2>Eliacer H2</h2>
-    <h6>Segunda edición Rafael</h6>
-    <h3>NUevo h3 creado</h3>
-    <h4>nuueva insercion eliacer</h4>
-    <h6>Tercera edición Rafael</h6>
+	<title>Sitios Turisticos de Colombia</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>		
+	<link rel="stylesheet" type="text/css" href="mapa.css"/>	
 
-    <p>Parrafo 1 Rafael</p>
-    <p>Eliacer Fuentealba</p>
+	<h1>Lista de plantas</h1>
+	<select name="select-location" id="select-location">
+		<option value="-1">Seleccione un lugar:</option>
+		<option value="-38.4235878,-72.3881865">Perquenco</option>
+		<option value="-37.0165346,-73.1555557">Coronel</option>	
+		<option value=" -36.8282488,-73.0522156">Concepción</option>
+		<option value="-37.6103219,-73.6560559">Lebu</option>
+		<option value="-38.0326787 ,-73.0697250">Puren</option>
+		<option value="-38.1649978,-72.9050159">Lumaco</option>		
+	</select>
+	<div id="map"></div>
+
+</head>
+<body>	
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   		crossorigin=""></script>   		
+	
+	<script src="mapa.js"></script>
 </body>
 </html>
